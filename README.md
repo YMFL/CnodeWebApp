@@ -19,14 +19,10 @@
 - 使用`PostCSS`对CSS进行预处理
 - 通过`CSSModules`处理模块内部的类名
 
-## 预览
-[DEMO](https://lumia2046.github.io/cnode/)
 
 ## 运行项目
 ```
-  git clone https://github.com/xuanshanbo/react_w.git
   cd cnode
-  npm install webpack-dev-server webpack -g (没有安装webpack的需要安装)
   npm install
   npm start
 ```
@@ -46,17 +42,5 @@
 - `profile`代表用户的信息页面，比如用户名，积分情况等，还包括发表、回复和收藏的主题
 - `publishTopic`对应发表主题页面，包括主题是否发送成功等状态
 - `message`对应登陆账号的消息界面，还包括了未读消息是否被标记已读等状态
-
-
-
-
-## TODO
-- 增加react-router过渡动画
-- 优化页面性能
-
-  联系Q294662037  分享群20481837
-
-
-  因测试等原因，为了方便大家使用，用的群里人员node社区的帐号密码。 如果你需要测试 ，请去APP.js内更换上自己的谢谢。
 
 
