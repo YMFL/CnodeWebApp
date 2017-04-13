@@ -1,16 +1,17 @@
 var path = require('path');
 var webpack = require('webpack');
-var autoprefixer = require('autoprefixer');
+var autoprefixer = require('autoprefixer');//css前缀处理
 
 var plugins = [];
 
-// 路径直接这样写比较好
 var outpath = './build'
+// 路径另外一种写法
 // var outpath = path.resolve(__dirname, 'build');
 
 module.exports = {
 	devtool: 'eval',
     devServer: {
+	    //API代理
         proxy: {
             "/api/*": {
                 target: "https://cnodejs.org",
@@ -20,10 +21,9 @@ module.exports = {
         contentBase: "./public",
         colors: true,
         historyApiFallback: true,
-        port:3456,
+        port:9000,
         open:true,
         inline: true,
-
     },
     entry: [   //文件入口
         './src/index.js'
@@ -37,9 +37,9 @@ module.exports = {
     module: {
         loaders: [
             {
-                test: /\.jsx?$/,
+                test: /\.(js|jsx)$/,
                 exclude: /node_modules/,
-                loader: 'babel'
+                loader: 'babel-loader'// transpiling compiling  从右向左执行
             },
             {
                 test: /\.less/,
