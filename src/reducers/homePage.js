@@ -1,7 +1,7 @@
 import {
   SELECT_TAB, RECORD_SCROLLT,
   REQUEST_TOPICS, RECEIVE_TOPICS
-} from '../actions'
+} from '../actions';
 
 
 const selectedTab = (state, action) => {

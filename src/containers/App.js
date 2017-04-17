@@ -9,7 +9,6 @@ import getSize from '../utils/getSize'
 
 class App extends Component {
   componentWillMount(){
-    // console.log('componentWillMount')
     const {dispatch} = this.props;
     const LoadingAction = (accessToken,loginName) => {
       dispatch(fetchAccess(accessToken))
@@ -17,6 +16,7 @@ class App extends Component {
       dispatch(fetchProfile(loginName))
     }
     if(window.localStorage.getItem('masterInfo')){
+
       let masterInfo = window.localStorage.getItem('masterInfo')
       masterInfo = JSON.parse(masterInfo)
       const accessToken = masterInfo.accessToken
