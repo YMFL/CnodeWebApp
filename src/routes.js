@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { Route, IndexRoute } from 'react-router';
+import React, {Component} from 'react';
+import {Route, IndexRoute} from 'react-router';
 import App from './containers/App';
 import HomePage from './containers/HomePage';//主页
 import Article from './containers/Article';
@@ -9,10 +9,10 @@ import Profile from './containers/Profile';
 import prefix from './utils/routePrefix';
 
 const PublishTopica = (location, cb) => {  //路由按需处理
-	require.ensure([], require => {
-	    cb(null, require('./containers/PublishTopic').default)
-	},'PublishTopica')
-}     
+    require.ensure([], require => {
+        cb(null, require('./containers/PublishTopic').default)
+    }, 'PublishTopica')
+}
 
 const routes = (
     <Route path='/' component={App}>
