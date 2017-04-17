@@ -12,7 +12,7 @@ import Pull from '../components/common/react-pullrefresh'
 
 class HomePage extends Component {
   constructor(){
-    super()
+    super();
     this.state={
       fadeIn:true,
       openDrawer:false,
@@ -20,9 +20,8 @@ class HomePage extends Component {
       isFreshing:false,
       fixedTop:0,
       scrollT:0
-    }
+    };
   }
-
   onRefresh = (next) => {
     if(!this.state.isFreshing){
       this.setState({
