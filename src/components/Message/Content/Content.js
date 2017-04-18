@@ -55,11 +55,12 @@ class Content extends Component {
 				isUpdating:false
 			})
 		}
-	}
+    }
 	render(){
-		const {dispatch,hasNotReadMessage,hasReadMessage,article,fetchArticle} = this.props
+		const {dispatch,hasNotReadMessage,hasReadMessage,article,fetchArticle} = this.props;
 		return (
 		  <div>
+			  {/*CircleLoading loading加载条*/}
 			  {this.state.isUpdating && <div><CircleLoading /></div>}
 			  {!this.state.isUpdating && <MuiThemeProvider>
 				<div>
@@ -69,7 +70,8 @@ class Content extends Component {
 				  </Tabs>
 				  <SwipeableViews index={this.state.slideIndex} onChangeIndex={this.handleChange}>
 				    <div>
-				      {hasNotReadMessage && hasNotReadMessage.length === 0 && 
+				      {
+				      	hasNotReadMessage && hasNotReadMessage.length === 0 &&
 				      	<div>
 				      		<div className={styles.msg}>暂无未读消息</div>
 				      	</div>
