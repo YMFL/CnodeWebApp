@@ -33,7 +33,6 @@ module.exports = {
         path: outpath,
         publicPath: '/assets/', //文件夹名字
         filename: 'bundle.js' //js姓名
-
     },
     module: {
         loaders: [
