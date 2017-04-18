@@ -255,8 +255,6 @@ export const fetchMessage = (accessToken) => {
   }
 }
 
-
-
 export const markAllMessages = (accessToken) => {
   return dispatch => {
     fetch(`https://cnodejs.org/api/v1/message/mark_all`, {
@@ -265,7 +263,7 @@ export const markAllMessages = (accessToken) => {
                 "Content-Type": "application/x-www-form-urlencoded"
             },
             body: `accesstoken=${accessToken}`
-        })
+    })
     .then(response => response.json())
     .then(json => dispatch({
       type:MARK_ALL_MESSAGES,

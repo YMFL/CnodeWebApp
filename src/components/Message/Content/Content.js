@@ -1,9 +1,9 @@
-import React, { PropTypes,Component } from 'react'
-import transformDate from '../../../utils/transformDate'
-import styles from './styles.less'
-import classnames from 'classnames'
-import {Link} from 'react-router'
-import prefix from '../../../utils/routePrefix'
+import React, { PropTypes,Component } from 'react';
+import transformDate from '../../../utils/transformDate';
+import styles from './styles.less';
+import classnames from 'classnames';
+import {Link} from 'react-router';
+import prefix from '../../../utils/routePrefix';
 import {Tabs, Tab} from 'material-ui/Tabs';
 import SwipeableViews from 'react-swipeable-views';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
@@ -11,9 +11,9 @@ import {List, ListItem} from 'material-ui/List';
 import Divider from 'material-ui/Divider';
 import Avatar from 'material-ui/Avatar';
 import RaisedButton from 'material-ui/RaisedButton';
-import Dialog from '../../common/Dialog'
-import CircleLoading from '../../common/CircleLoading'
-import {markAllMessages,fetchMessage} from '../../../actions'
+import Dialog from '../../common/Dialog';
+import CircleLoading from '../../common/CircleLoading';
+import {markAllMessages,fetchMessage} from '../../../actions';
 
 class Content extends Component {
 	constructor(props) {
@@ -157,7 +157,6 @@ class Content extends Component {
 		  </div>
 		);
 	}
-
 }
 
 export default Content
