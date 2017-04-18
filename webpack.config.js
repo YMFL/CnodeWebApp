@@ -21,6 +21,7 @@ module.exports = {
         contentBase: "./public",
         colors: true,
         historyApiFallback: true,
+        host: '0.0.0.0',//可以通过http-server访问到 本机ip:9000
         port:9000,
         open:true,
         inline: true,

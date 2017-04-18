@@ -255,6 +255,8 @@ export const fetchMessage = (accessToken) => {
   }
 }
 
+
+
 export const markAllMessages = (accessToken) => {
   return dispatch => {
     fetch(`https://cnodejs.org/api/v1/message/mark_all`, {

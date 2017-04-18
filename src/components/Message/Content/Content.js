@@ -31,9 +31,9 @@ class Content extends Component {
 	  });
 	};
 	markMessages = () => {
-		let {dispatch,login} = this.props
-		let accessToken = login.accessToken
-		dispatch(markAllMessages(accessToken))
+		let {dispatch,login} = this.props;
+		let accessToken = login.accessToken;
+		dispatch(markAllMessages(accessToken));
 		this.setState({
 			isUpdating:true
 		})
